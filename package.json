@@ -23,6 +23,7 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
+    "vercel": "^46.0.5",
     "@mastra/deployer-vercel": "latest",
     "@types/node": "^24.3.0",
     "mastra": "latest",

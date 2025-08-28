@@ -2,7 +2,7 @@ import { Agent } from '@mastra/core/agent';
 import { openai } from '@ai-sdk/openai'; // Assuming OpenAI for the LLM for the agent itself
 // import { openAIImageGenerationTool } from '../tools/openAIImageGenerationTool';
 import { geminiImageGenerationTool } from '../tools/geminiImageGenerationTool'; // Updated import
-import { Memory } from '@mastra/memory';
+//import { Memory } from '@mastra/memory';
 
 export const imageCreatorAgent = new Agent({
   // agent_id: 'image-creator-agent-001', // Removed agent_id to address linter error
@@ -27,5 +27,5 @@ export const imageCreatorAgent = new Agent({
   tools: { 
     geminiImageGenerationTool // Register the tool with the agent
   },
-  memory: new Memory(), // Enable memory for conversation context
+  //memory: new Memory(), // Enable memory for conversation context
 }); 

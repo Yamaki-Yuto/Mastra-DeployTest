@@ -1,7 +1,7 @@
 import { openai } from '@ai-sdk/openai';
 import { Agent } from '@mastra/core/agent';
-import { Memory } from '@mastra/memory';
-import { LibSQLStore } from '@mastra/libsql';
+//import { Memory } from '@mastra/memory';
+//import { LibSQLStore } from '@mastra/libsql';
 
 export const pmAgent = new Agent({
   name: 'Project Manager Agent',
@@ -34,12 +34,12 @@ gantt
 `,
   model: openai('gpt-4o-mini'),
   tools: {},
-  memory: new Memory({
-    storage: new LibSQLStore({
+  //memory: new Memory({
+  //  storage: new LibSQLStore({
       // path is relative to the .mastra/output directory
-      url: 'file:../mastra.db',
-    }),
-  }),
+  //     url: 'file:../mastra.db',
+  //   }),
+  // }),
 });
 
 

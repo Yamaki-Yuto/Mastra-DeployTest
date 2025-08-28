@@ -7,7 +7,6 @@ import { weatherAgent } from './agents/weather-agent';
 import { mimicAgent } from './agents/mimic-agent';
 import { pmAgent } from './agents/pm-agent';
 import { imageCreatorAgent } from './agents/imageCreator';
-import { VercelDeployer } from '@mastra/deployer-vercel';
 // 既存のagents/workflowsのimportはそのまま
 
 
@@ -18,7 +17,6 @@ export const mastra = new Mastra({
     // stores telemetry, evals, ... into memory storage, if it needs to persist, change to file:../mastra.db
     url: "file:../mastra.db",
   }),*/
-  deployer: new VercelDeployer(),
   logger: new PinoLogger({
     name: 'Mastra',
     level: 'info',
