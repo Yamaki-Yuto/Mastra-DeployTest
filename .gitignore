@@ -1,0 +1,12 @@
+output.txt
+node_modules
+dist
+.mastra
+.env.development
+.env
+*.db
+*.db-*
+node_modules/
+.mastra/
+.env
+.DS_Store
