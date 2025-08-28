@@ -1,0 +1,23 @@
+# Exclude from deployment upload
+.git/
+.github/
+.vercel/
+.DS_Store
+*.log
+
+# Vercel will install deps
+node_modules/
+
+# Mastra internal cache (build uses output only)
+.mastra/.build/
+
+# Tests and docs
+__tests__/
+test/
+tests/
+coverage/
+docs/
+examples/
+
+# Optional: exclude large local public assets
+src/mastra/public/generated-images/
